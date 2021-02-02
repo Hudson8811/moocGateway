@@ -1,0 +1,55 @@
+.header {
+  box-sizing: border-box;
+  padding: 24px 0;
+  background-color: #fff;
+
+  &-logo {
+    display: block;
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 100;
+    color: #4d80b2;
+  }
+
+  &-menu-item {
+    box-sizing: border-box;
+    display: block;
+    padding: 0 15px;
+  }
+
+  &-menu-link {
+    color: #404040;
+
+    &--active {
+      font-weight: bold;
+      color: #4d80b2;
+      text-decoration: underline;
+
+      &:hover {
+        font-weight: bold;
+        color: #4d80b2;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-login {
+    margin: 0;
+    color: #404040;
+    font-weight: bold;
+
+    p {
+      display: block;
+      padding-right: 14px;
+    }
+
+    .entrance {
+      display: block;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #404040;
+      cursor: pointer;
+    }
+  }
+}

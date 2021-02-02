@@ -1,0 +1,54 @@
+<div class="modal fade login-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title mon" id="exampleModalLabel">Вход
+            <p class="mon">Используйте свою учетную запись <br> для входа</p>
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="login-form">
+              <label class="login-input login-input--email">
+                  <span class="login-input-icon">
+                      <img src="img/man.svg" alt="">
+                  </span>
+                  <input type="email" placeholder="E-mail">
+              </label>
+
+              <div class="wrong">
+                  <img src="img/wrong.png" alt="">
+                  <p>Неверная попытка входа</p>
+              </div>
+
+              <label class="login-input login-input--pass">
+                <span class="login-input-icon">
+                    <img src="img/lock.svg" alt="">
+                </span>
+                <input type="password" placeholder="Пароль">
+            </label>
+
+            <div class="wrong">
+                <img src="img/wrong.png" alt="">
+                <p>Введен неверный логин или пароль</p>
+            </div>
+
+            <div class="login-rem-wrapper">
+                <label class="login-rem">
+                    <input type="checkbox">
+                    <b></b>
+                    <p>Запомнить меня</p>
+                </label>
+
+                <a href="#" class="login-link">Забыли пароль?</a>
+            </div>
+
+            <button class="blue-btn"><span>Войти</span></button>
+            <a href="#" class="login-link login-link--last">Зарегистрироваться как новый пользователь</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,58 @@
+.footer {
+  box-sizing: border-box;
+  padding: 20px 0;
+  background-color: #4d80b2;
+
+  &-logo {
+    display: block;
+    font-size: 23px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  &-social {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    padding: 5px;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    img {
+      display: block;
+      max-width: 98%;
+    }
+  }
+
+  &-polic {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 13px;
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  &-phone {
+    display: block;
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  &-desc {
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    text-align: right;
+  }
+}

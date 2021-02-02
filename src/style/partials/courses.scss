@@ -1,0 +1,60 @@
+.courses {
+  &-catalog {
+    padding-top: 13px;
+    margin-bottom: -30px;
+
+    & > .col-4 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &-item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    min-height: 207px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &-content {
+    p {
+      display: block;
+      margin-bottom: 29px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000;
+    }
+
+    span {
+      display: block;
+      font-size: 13px;
+      line-height: 16px;
+      color: #000;
+    }
+  }
+
+  &-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    img {
+      position: absolute;
+      right: 10px;
+      display: block;
+    }
+  }
+}

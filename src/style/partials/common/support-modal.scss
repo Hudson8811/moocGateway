@@ -1,0 +1,48 @@
+.support-modal {
+  .modal-dialog {
+    max-width: 540px;
+  }
+  .modal-content {
+    width: 100%;
+    max-width: 540px;
+  }
+
+  .blue-btn {
+    max-width: 135px;
+    margin: 0 auto;
+  }
+  .wrong {
+    min-height: 50px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.modal-input {
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1a1a1a;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 19px;
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 9px;
+    height: 40px;
+    margin: 2px 0 0;
+    box-sizing: border-box;
+    border: 1px solid #4d80b2;
+    outline: none;
+    font-size: 13px;
+    line-height: 16px;
+    color: #1a1a1a;
+    font-family: 'Montserrat', sans-serif;
+  }
+  textarea {
+    height: 116px;
+    resize: none;
+  }
+}

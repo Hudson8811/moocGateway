@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <title>Поддержка</title>
+    <title>Курсы</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -30,26 +30,60 @@
                   </div>
                   <div class="col-3">
                       <div class="w-100 row align-items-center justify-content-end mon header-login">
-                          <p>Привет, Маша</p>
-                          <img src="img/ava.png" height="64" alt="">
+                          <a class="entrance" data-toggle="modal" data-target="#exampleModal" >Вход</a>
                       </div>
                   </div>
               </div>
           </div>
       </header>
-      <main class="main w-100 support support-cl">
+      <main class="main w-100">
         <div class="container">
-          <h2 class="title center">Обращения в поддержку</h2>
+          <h2 class="title">Мои курсы</h2>
 
-          <div class="support-content">
-            <div class="row support-content-heading">
-              <div class="col-4 mr-auto"><p>Обращения в поддержку</p></div>
-              <div class="col-5 mr-auto"><p>Описание</p></div>
-              <div class="col-2"><p>Дата создания</p></div>
+          <div class="row courses-catalog align-items-stre">
+
+            <div class="col-4 mon">
+              <a href="#" class="courses-item">
+                <div class="row align-items-center h-100">
+                  <div class="courses-content col-8">
+                    <p>Подготовка к ЕГЭ <b class="nowrap">по Истории Росии</b> 20 века</p>
+                    <span>1 месяц</span>
+                  </div>
+                  <div class="courses-image col-4">
+                    <img src="img/curs/icon1.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 mon">
+              <a href="#" class="courses-item">
+                <div class="row align-items-center h-100">
+                  <div class="courses-content col-8">
+                    <p>Профильная математика подготовка к ЕГЭ</p>
+                    <span>5 месяцев</span>
+                  </div>
+                  <div class="courses-image col-4">
+                    <img src="img/curs/icon2.png" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 mon">
+              <a href="#" class="courses-item">
+                <div class="row align-items-center h-100">
+                  <div class="courses-content col-8">
+                    <p>Подготовка <b class="nowrap">к ЕГЭ по</b> обществознанию</p>
+                    <span>3 месяца</span>
+                  </div>
+                  <div class="courses-image col-4">
+                    <img src="img/curs/icon3.png" alt="">
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
-
-          <a href="#" class="orange-btn" data-toggle="modal" data-target="#exampleModal-2">Добавить обращение</a>
         </div>
       </main>
 
@@ -135,43 +169,70 @@
           </div>
         </div>
       </div>
-    <div class="modal fade login-modal support-modal" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade login-modal reg-modal" id="exampleModal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title mon" id="exampleModalLabel">Добавление обращения</h5>
+              <h5 class="modal-title mon" id="exampleModalLabel">Регистрация
+                <p class="mon">Создание нового пользователя</p>
+              </h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
               <form class="login-form">
-                  <label class="modal-input">
-                      Заголовок
-                      <input type="text">
+                  <label class="login-input login-input--email">
+                      <span class="login-input-icon">
+                          <img src="img/mail-icon.svg" alt="">
+                      </span>
+                      <input type="email" placeholder="E-mail">
                   </label>
     
                   <div class="wrong">
-                    <img src="img/wrong.png" alt="">
-                    <p>Добавьте заголвок обращения</p>
+                      <img src="img/wrong.png" alt="">
+                      <p>Неверная попытка входа</p>
                   </div>
     
-                  <div class="wrong">
+                  <label class="login-input login-input--email">
+                    <span class="login-input-icon">
+                        <img src="img/man.svg" alt="">
+                    </span>
+                    <input type="text" placeholder="Имя">
+                </label>
+    
+                <div class="wrong">
                     <img src="img/wrong.png" alt="">
-                    <p>Заголовок должен быть не менее 10 и не более 100 символов</p>
-                  </div>
+                    <p>Неверная попытка входа</p>
+                </div>
     
-                  <label class="modal-input">
-                    Описание
-                    <textarea></textarea>
-                  </label>
+                <label class="login-input login-input--email">
+                  <span class="login-input-icon">
+                      <img src="img/man.svg" alt="">
+                  </span>
+                  <input type="text" placeholder="Фамилия">
+              </label>
     
-                  <div class="wrong">
+              <div class="wrong">
+                  <img src="img/wrong.png" alt="">
+                  <p>Неверная попытка входа</p>
+              </div>
+    
+                  <label class="login-input login-input--pass">
+                    <span class="login-input-icon">
+                        <img src="img/lock.svg" alt="">
+                    </span>
+                    <input type="password" placeholder="Пароль">
+                </label>
+    
+                <div class="wrong">
                     <img src="img/wrong.png" alt="">
-                    <p>Добавьте описание обращения</p>
-                  </div>
+                    <p>Введен неверный логин или пароль</p>
+                </div>
     
-                <button class="blue-btn"><span>Отправить</span></button>
+                <p class="reg-desc mon">Пароль должен состоять из восьми или более символов латинского алфавита, содержать заглавные и строчные буквы, цифры. Для усложнения рекомендуем добавить символы и знаки препинания</p>
+    
+                <button class="blue-btn"><span>Зарегистрироваться</span></button>
               </form>
             </div>
           </div>

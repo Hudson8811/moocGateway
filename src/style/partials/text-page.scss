@@ -1,0 +1,60 @@
+.text-page {
+  &-content {
+    box-sizing: border-box;
+    padding-top: 30px;
+    color: #212121;
+
+    h2 {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 35px;
+      line-height: 40px;
+      font-weight: bold;
+    }
+
+    h3 {
+      display: block;
+      font-size: 25px;
+      line-height: 28px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 710px;
+      margin: 35px auto;
+    }
+
+    p {
+      display: block;
+      text-indent: 35px;
+      margin-bottom: 28px;
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    h4 {
+      display: block;
+      text-indent: 35px;
+      font-size: 20px;
+      line-height: 23px;
+      font-weight: bold;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+
+      li {
+        display: block;
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+
+    a {
+      max-width: 200px;
+      margin-top: 76px;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.list-quest {
+  display: flex;
+  justify-content: flex-start;
+
+  & + .list-quest {
+    margin-top: 25px;
+  }
+
+  &-wrapper {
+    box-sizing: border-box;
+    padding: 19px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  &-title {
+    display: block;
+    margin-top: -3px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #4d80b2;
+  }
+
+  &-persent {
+    display: block;
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #4d80b2;
+  }
+}
+
+.list-decision {
+  &-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    border-radius: 5px;
+    background-color: #4d80b2;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 18px;
+  }
+
+  &-item {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px 20px 8px 60px;
+    color: #212121;
+
+    &:hover {
+      color: #212121;
+    }
+
+    & + & {
+      margin-top: 9px;
+    }
+  }
+
+  &-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+    width: 60px;
+    height: 100%;
+    min-height: 100%;
+    background-color: #c2cacc;
+    font-size: 31px;
+    outline-width: 31px;
+    color: #fff;
+    font-weight: bold;
+
+    &.green {
+      background-color: #78a34f;
+    }
+
+    &.orange {
+      background-color: #df742c;
+    }
+  }
+
+  &-title {
+    display: block;
+    box-sizing: border-box;
+    padding: 0 29px;
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 23px;
+    color: #212121;
+  }
+
+  &-date {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 91px;
+    height: 26px;
+    border: 2px solid #2c2c2c;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 19px;
+    flex-shrink: 0;
+    color: #2c2c2c;
+  }
+}

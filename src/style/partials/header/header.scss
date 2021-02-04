@@ -2,6 +2,10 @@
   box-sizing: border-box;
   padding: 24px 0;
   background-color: #fff;
+  min-height: 112px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: centergi;
 
   &-logo {
     display: block;

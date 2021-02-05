@@ -22,6 +22,10 @@ body {
   main {
     flex-grow: 1;
     padding: 40px 0 90px;
+
+    @include mmMax {
+      padding: 25px 0 90px;
+    }
   }
 }
 
@@ -32,6 +36,11 @@ body {
   line-height: 30px;
   font-weight: bold;
   color: #000;
+
+  @include mMax {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .bac-link {
@@ -64,6 +73,22 @@ body {
     color: #fff;
     text-decoration: none;
   }
+
+  @include mMax {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @include mmMax {
+    min-height: 40px;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 11px 5px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .nowrap {
@@ -81,6 +106,10 @@ body {
   align-items: center;
   padding: 30px 0 35px;
 
+  @include mmMax {
+    padding: 22px 0;
+  }
+
   &-title {
     display: block;
     flex-shrink: 0;
@@ -89,6 +118,12 @@ body {
     line-height: 24px;
     font-weight: bold;
     padding-right: 9px;
+
+    @include mmMax {
+      font-size: 13px;
+      line-height: 16px;
+      padding-right: 5px;
+    }
   }
 
   &-line {
@@ -98,6 +133,11 @@ body {
     background-color: #fff;
     border-radius: 7px;
 
+    @include mmMax {
+      height: 10px;
+      border-radius: 5px;
+    }
+
     &--stretch {
       position: absolute;
       height: 100%;
@@ -105,6 +145,10 @@ body {
       top: 0;
       border-radius: 7px;
       background-color: #df742c;
+
+      @include mmMax {
+        border-radius: 5px;
+      }
     }
   }
 }
@@ -123,6 +167,19 @@ body {
   line-height: 23px;
   text-align: center;
   color: #303030;
+
+  @include mMax {
+    min-height: 55px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 5px 10px;
+  }
+
+  @include mmMax {
+    font-size: 13px;
+    line-height: 16px;
+    min-height: 40px;
+  }
 }
 
 .disabled {

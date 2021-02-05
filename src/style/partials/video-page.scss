@@ -1,16 +1,31 @@
 .video-page {
   box-sizing: border-box;
-  padding: 0 0 108px;
+
+  .prev-btn {
+    min-height: 55px;
+    height: 55px;
+    max-width: 180px;
+    margin: 10px auto 0;
+    color: #df742c;
+
+    @include mmMax {
+      min-height: 40px;
+      height: 40px;
+    }
+  }
 
   &-container {
     padding: 0 80px;
+
+    @include tMax {
+      padding: 0 15px;
+    }
   }
 
   .video {
     display: block;
-    height: 545px;
     width: 100%;
-    margin-top: 33px;
+    margin-top: 30px;
 
     video,
     iframe {
@@ -25,5 +40,13 @@
   .orange-btn {
     max-width: 200px;
     margin-top: 60px;
+
+    @include mMax {
+      max-width: 180px;
+    }
+
+    @include mmMax {
+      margin-top: 40px;
+    }
   }
 }

@@ -10,6 +10,16 @@
       padding-bottom: 30px;
       background-color: #fff;
 
+      @include mMax {
+        padding-top: 0;
+        padding-bottom: 0;
+        min-height: 57px;
+      }
+
+      @include mmMax {
+        min-height: 45px;
+      }
+
       .col-2 {
         padding: 0;
       }
@@ -20,6 +30,16 @@
         line-height: 19px;
         font-family: 'Montserrat', sans-serif;
         color: #2c2c2c;
+
+        @include mMax {
+          padding: 0 20px;
+        }
+
+        @include mmMax {
+          padding: 0 10px;
+          font-size: 13px;
+          line-height: 16px;
+        }
       }
 
       &.support-content-heading {
@@ -29,6 +49,7 @@
         padding-bottom: 18px;
 
         p {
+          box-sizing: border-box;
           display: block;
           font-size: 20px;
           line-height: 23px;
@@ -47,11 +68,51 @@
   .orange-btn {
     max-width: 200px;
     margin: 50px auto 0;
+
+    @include mMax {
+      margin: 40px auto 0;
+    }
   }
 
   &-cl {
     .orange-btn {
       margin-top: 80px;
+
+      @include mMax {
+        margin-top: 40px;
+      }
     }
+  }
+
+  &-mobile-number {
+    align-self: stretch;
+    box-sizing: border-box;
+    margin-left: -15px;
+    min-height: 57px;
+    height: auto;
+    width: 45px;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: bold;
+    color: #2c2c2c;
+    border-right: 1px solid #6d6d6d;
+    flex-shrink: 0;
+
+    @include mmMax {
+      min-height: 45px;
+      width: 26px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  &-mobile-more {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    color: #4d80b2;
+    text-decoration: none;
+    margin-right: 15px;
+    flex-shrink: 0;
   }
 }

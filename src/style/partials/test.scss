@@ -4,6 +4,22 @@
       max-width: 200px;
       min-height: 60px;
       margin: 0;
+
+      @include mMax {
+        min-height: 55px;
+        max-width: 180px;
+      }
+
+      @include mmMax {
+        min-height: 40px;
+      }
+    }
+
+    .prev-btn {
+      @include mMax {
+        max-width: 180px;
+        width: 100%;
+      }
     }
   }
 
@@ -12,6 +28,10 @@
 
   &-row {
     margin: 0;
+
+    @include tMax {
+      margin: 0 -15px;
+    }
   }
 
   &-question {
@@ -20,12 +40,21 @@
     background-color: #fff;
     border-radius: 5px;
 
+    @include mmMax {
+      padding: 15px 0;
+    }
+
     p {
       display: block;
       font-size: 20px;
       line-height: 24px;
       font-weight: bold;
       color: #373737;
+
+      @include mmMax {
+        font-size: 16px;
+        line-height: 19px;
+      }
     }
   }
 
@@ -36,6 +65,12 @@
     font-size: 15px;
     line-height: 19px;
     color: #292929;
+
+    @include mmMax {
+      font-size: 13px;
+      line-height: 16px;
+      padding: 20px 0;
+    }
   }
 
   &-check {
@@ -52,8 +87,17 @@
     background-color: #fff;
     cursor: pointer;
 
+    @include mmMax {
+      min-height: 50px;
+      padding: 5px 10px;
+    }
+
     &-wrapper {
       margin-bottom: 30px;
+
+      @include mMax {
+        margin-bottom: 20px;
+      }
     }
 
     input {
@@ -73,6 +117,11 @@
       font-size: 20px;
       line-height: 24px;
       color: #272727;
+
+      @include mmMax {
+        font-size: 13px;
+        line-height: 16px;
+      }
 
       &:before {
         content: '';
@@ -104,5 +153,24 @@
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
+
+    @include mmMax {
+      height: 133px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &-btns {
+    @include mMax {
+      margin-top: 38px;
+    }
+
+    @include mmMax {
+      margin-top: 28px;
+
+      .col-12 + .col-12 {
+        margin-top: 15px;
+      }
+    }
   }
 }

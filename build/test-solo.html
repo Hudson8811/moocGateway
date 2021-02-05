@@ -17,10 +17,10 @@
       <header class="header w-100">
           <div class="container">
               <div class="row align-items-center">
-                  <div class="col-2">
+                  <div class="col-lg-2 col-6">
                       <a href="#" class="header-logo mon">MoocGateway</a>
                   </div>
-                  <div class="col">
+                  <div class="col header-menu-wrapper">
                       <ul class="header-menu row">
                           <li class="header-menu-item"><a class="header-menu-link" href="#">Главная</a></li>
                           <li class="header-menu-item"><a class="header-menu-link" href="#">Конфиденциальность</a></li>
@@ -28,29 +28,63 @@
                           <li class="header-menu-item"><a class="header-menu-link header-menu-link--active" href="#">Курсы</a></li>
                       </ul>
                   </div>
-                  <div class="col-3">
+                  <div class="col-3 header-login-wrapper">
                       <div class="w-100 row align-items-center justify-content-end mon header-login">
                           <p>Привет, Маша</p>
                           <img src="img/ava.png" height="64" alt="">
                       </div>
                   </div>
+      
+                  <div class="col header-burger-wrapper">
+                      <a href="#" class="header-burger">
+                          <span></span>
+                      </a>
+                  </div>
               </div>
           </div>
       </header>
+      
+      <div class="mobile-overlay"></div>
+      <div class="mobile-menu-wrapper">
+          <div class="container">
+              <ul class="mobile-menu">
+                  <li class="mobile-menu-item">
+                      <a href="#" class="mobile-menu-link-image">
+                          <img src="img/ava.png" alt="">
+                      </a>
+                  </li>
+                  <li class="mobile-menu-item">
+                      <a href="#" class="mobile-menu-link">Главная</a>
+                  </li>
+                  <li class="mobile-menu-item">
+                      <a href="#" class="mobile-menu-link">Конфиденциальность</a>
+                  </li>
+                  <li class="mobile-menu-item">
+                      <a href="#" class="mobile-menu-link">Поддержка</a>
+                  </li>
+                  <li class="mobile-menu-item">
+                      <a href="#" class="mobile-menu-link mobile-menu-link--active">Курсы</a>
+                  </li>
+                  <li class="mobile-menu-item">
+                      <a href="#" class="mobile-menu-link">Личный кабинет</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
       <main class="main w-100">
           <div class="test-page mon">
             <div class="container test-container">
               <div class="row align-items-center test-row">
-                <div class="col-6 ml-auto">
-                  <h2 class="title mon">Модуль 2 - Решение уравнений</h2>
+                <div class="col-lg-6 ml-auto">
+                  <h2 class="title mon text-center text-lg-left">Модуль 2 <span class="nowrap">- Решение уравнений</span></h2>
                 </div>
-                <div class="col-5 mr-auto">
+                <div class="col-6 col-xl-5 mr-auto d-none d-lg-block">
                   <a href="#" class="bac-link mon">К списку заданий</a>
                 </div>
               </div>
   
               <div class="row align-items-center test-row">
-                <div class="col-11 m-auto">
+                <div class="col-12 col-xl-11 m-auto">
                   <div class="bar">
                     <div class="bar-title">
                       <span>10</span><span>/10</span>
@@ -61,24 +95,25 @@
               </div>
 
               <div class="row align-items-center test-row">
-                <div class="col-11 m-auto">
+                <div class="col-12 col-xl-11 m-auto">
                   <div class="test-question">
-                    <p class="col-11">Таким образом консультация с широким активом влечет за собой процесс внедрения и модернизации новых предложений. Значимость этих проблем настолько очевидна, что консультация с широким активом представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям.</p>
+                    <p class="col-12 col-xl-11">Таким образом консультация с широким активом влечет за собой процесс внедрения и модернизации новых предложений. Значимость этих проблем настолько очевидна, что консультация с широким активом представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям.</p>
                   </div>
                 </div>
               </div>
 
               <div class="row align-items-center justify-content-center test-row">
-                <div class="col-11">
+                <div class="col-12 col-xl-11">
                   <p class="test-desc">Впиши свой ответ</p>
                 </div>
-                <div class="col-11">
+                <div class="col-12 col-xl-11">
                   <textarea class="test-textarea"></textarea>
                 </div>
-                <div class="col-11">
+                <div class=" col-12 col-xl-11">
                   <div class="row justify-content-center test-btns">
-                      <div class="col"><a href="#" class="prev-btn ml-auto">Предыдущий вопрос</a></div>
-                      <div class="col"><a href="#" class="orange-btn mr-auto">Отправить <br> на проверку</a></div>
+                      <div class="col-12 col-sm"><a href="#" class="prev-btn m-auto mr-sm-0 ml-sm-0 ml-lg-auto">Предыдущий вопрос</a></div>
+                      <div class="col-12 col-sm"><a href="#" class="orange-btn m-auto ml-auto ml-lg-0 mr-lg-auto">Отправить <br> на проверку</a></div>
+                      <div class="col-12 col-sm d-lg-none d-block"><a href="#" class="prev-btn m-auto mr-sm-0 ml-auto">К списку заданий</a></div>
                   </div>
                 </div>
               </div>
@@ -89,10 +124,10 @@
       <footer class="footer w-100">
           <div class="container">
               <div class="row align-items-center">
-                  <div class="col-2">
-                      <a href="#" class="footer-logo mon">MoocGateway</a>
+                  <div class="col-lg-2 col-sm-4 col-12 order-1">
+                      <a href="#" class="footer-logo mon text-center text-sm-left">MoocGateway</a>
                   </div>
-                  <div class="col">
+                  <div class="col order-4 order-sm-2">
                       <div class="row justify-content-center">
                           <a href="#" class="footer-social">
                               <img src="" alt="">
@@ -105,9 +140,9 @@
                           <a href="#" class="footer-polic">Политика конфиденциальности</a>
                       </div>
                   </div>
-                  <div class="col-3">
-                      <a href="tel:+78008888888" class="footer-phone">8 (800) 888-88-88</a>
-                      <p class="footer-desc">Томская область, г. Северск, ул. Транспортная, д.30, офис 338</p>
+                  <div class="col-lg-3 col-sm-4 col-12 order-3">
+                      <a href="tel:+78008888888" class="footer-phone text-center text-sm-right">8 (800) 888-88-88</a>
+                      <p class="footer-desc text-center text-sm-right">Томская область, г. Северск, ул. Транспортная, д.30, офис 338</p>
                   </div>
               </div>
           </div>

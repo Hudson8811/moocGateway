@@ -1,10 +1,10 @@
 .courses {
   &-catalog {
     padding-top: 13px;
-    margin-bottom: -30px;
+    margin-bottom: -20px;
 
-    & > .col-4 {
-      margin-bottom: 30px;
+    & > .col-12 {
+      margin-bottom: 20px;
     }
   }
 
@@ -21,6 +21,21 @@
     color: #000;
     text-decoration: none;
 
+    @include tMax {
+      padding: 50px 30px;
+    }
+
+    @include mMax {
+      min-height: 390px;
+      height: 100%;
+      padding: 20px 25px 46px;
+    }
+
+    @include mmMax {
+      min-height: 330px;
+      padding: 20px 20px 40px;
+    }
+
     &:hover {
       color: #000;
     }
@@ -28,12 +43,29 @@
 
   &-content {
     p {
+      position: relative;
+      z-index: 2;
       display: block;
       margin-bottom: 29px;
       font-weight: bold;
       font-size: 20px;
       line-height: 24px;
       color: #000;
+
+      @include mMax {
+        text-align: center;
+        margin-bottom: 15px;
+
+        .nowrap {
+          white-space: normal;
+        }
+      }
+
+      @include mmMax {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 7px;
+      }
     }
 
     span {
@@ -41,6 +73,10 @@
       font-size: 13px;
       line-height: 16px;
       color: #000;
+
+      @include mMax {
+        text-align: center;
+      }
     }
   }
 
@@ -55,6 +91,19 @@
       position: absolute;
       right: 10px;
       display: block;
+
+      @include mMax {
+        position: relative;
+        right: auto;
+      }
+    }
+
+    @include mMax {
+      height: 220px;
+    }
+
+    @include mmMax {
+      height: 175px;
     }
   }
 }

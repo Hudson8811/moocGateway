@@ -1,5 +1,17 @@
+@mixin tMax {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+
 @mixin mMax {
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin mmMax {
+  @media (max-width: 777px) {
     @content;
   }
 }

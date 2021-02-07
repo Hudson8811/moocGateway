@@ -10,12 +10,22 @@
       font-size: 35px;
       line-height: 40px;
       font-weight: bold;
+
+      @include mMax {
+        font-size: 30px;
+        line-height: 35px;
+      }
     }
 
     h3 {
       display: block;
       font-size: 25px;
       line-height: 28px;
+
+      @include mMax {
+        font-size: 20px;
+        line-height: 25px;
+      }
     }
 
     img {
@@ -31,6 +41,11 @@
       margin-bottom: 28px;
       font-size: 20px;
       line-height: 23px;
+
+      @include mMax {
+        font-size: 16px;
+        line-height: 19px;
+      }
     }
 
     h4 {
@@ -39,6 +54,11 @@
       font-size: 20px;
       line-height: 23px;
       font-weight: bold;
+
+      @include mMax {
+        font-size: 16px;
+        line-height: 19px;
+      }
     }
 
     ul,
@@ -49,12 +69,29 @@
         display: block;
         font-size: 20px;
         line-height: 23px;
+
+        @include mMax {
+          font-size: 16px;
+          line-height: 19px;
+        }
       }
     }
 
-    a {
-      max-width: 200px;
+    .btn-wrap {
       margin-top: 76px;
+      a {
+        max-width: 200px;
+
+        @include mMax {
+          max-width: 180px;
+        }
+      }
+
+      div + div {
+        @include mmMax {
+          margin-top: 14px;
+        }
+      }
     }
   }
 }

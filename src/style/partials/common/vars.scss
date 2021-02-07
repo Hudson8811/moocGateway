@@ -11,7 +11,13 @@
 }
 
 @mixin mmMax {
-  @media (max-width: 777px) {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin smallMax {
+  @media (max-width: 575px) {
     @content;
   }
 }

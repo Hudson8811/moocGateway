@@ -3,6 +3,14 @@
     img {
       display: block;
       margin: 85px auto 25px;
+
+      @include mMax {
+        margin-bottom: 40px;
+      }
+
+      @include mmMax {
+        height: 245px;
+      }
     }
 
     &--fin {
@@ -39,6 +47,16 @@
       font-weight: bold;
       color: #fff;
       text-align: center;
+
+      @include mMax {
+        font-size: 25px;
+        line-height: 28px;
+      }
+
+      @include mmMax {
+        font-size: 20px;
+        line-height: 23px;
+      }
     }
 
     &-progres {
@@ -49,6 +67,15 @@
       background-color: #df742c;
       border-radius: 25px;
       height: 100%;
+    }
+
+    @include mMax {
+      height: 40px;
+      margin-bottom: 38px;
+    }
+
+    @include mmMax {
+      height: 30px;
     }
   }
 
@@ -62,6 +89,26 @@
 
       & + a {
         margin-top: 19px;
+
+        @include mmMax {
+          margin-top: 14px;
+        }
+      }
+
+      @include mMax {
+        max-width: 180px;
+        height: 50px;
+        min-height: 50px;
+        margin: 0 auto;
+
+        br {
+          display: none;
+        }
+      }
+
+      @include mmMax {
+        min-height: 40px;
+        height: 40px;
       }
     }
   }

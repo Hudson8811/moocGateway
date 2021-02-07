@@ -66,7 +66,7 @@
                       <a href="#" class="mobile-menu-link mobile-menu-link--active">Курсы</a>
                   </li>
                   <li class="mobile-menu-item">
-                      <a href="#" class="mobile-menu-link">Личный кабинет</a>
+                      <a href="#" class="mobile-menu-link"  data-toggle="modal" data-target="#exampleModal">Личный кабинет</a>
                   </li>
               </ul>
           </div>
@@ -75,7 +75,7 @@
           <div class="list-page mon">
           <div class="container">
             <div class="row">
-              <div class="col-5">
+              <div class="col-12 col-lg-5">
                 <div class="list-quest-wrapper">
                   <a href="#"  class="list-quest align-items-center">
                     <div class="list-quest-icon" style="background-color: #b2dcee;">
@@ -109,7 +109,7 @@
                     <p class="list-quest-persent ">0%</p>
                   </a>
 
-                  <a href="#"  class="list-quest align-items-start disabled">
+                  <a href="#"  class="list-quest align-items-center align-items-lg-start disabled">
                     <div class="list-quest-icon" style="background-color: #979493;">
                       <img src="img/list/icon-5.svg" alt="" height="34">
                     </div>
@@ -127,7 +127,7 @@
                 </div>
                 
               </div>
-              <div class="col-7">
+              <div class="col-7 d-none d-lg-block">
                 <h2 class="list-decision-heading">Решение уравнений</h2>
                 <a href="#" class="list-decision-item">
                   <p class="list-decision-icon green">1</p>
@@ -197,6 +197,224 @@
           </div>
       </footer>
     </div>
+
+    <div class="support-modal modal fade login-modal " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title mon text-center text-sm-left" id="exampleModalLabel">Вход
+                <p class="mon">Используйте свою учетную запись <br> для входа</p>
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="login-form">
+                  <label class="login-input login-input--email">
+                      <span class="login-input-icon">
+                          <img src="img/man.svg" alt="">
+                      </span>
+                      <input type="email" placeholder="E-mail">
+                  </label>
+    
+                  <div class="wrong">
+                      <img src="img/wrong.png" alt="">
+                      <p>Неверная попытка входа</p>
+                  </div>
+    
+                  <label class="login-input login-input--pass">
+                    <span class="login-input-icon">
+                        <img src="img/lock.svg" alt="">
+                    </span>
+                    <input type="password" placeholder="Пароль">
+                </label>
+    
+                <div class="wrong">
+                    <img src="img/wrong.png" alt="">
+                    <p>Введен неверный логин или пароль</p>
+                </div>
+    
+                <div class="login-rem-wrapper">
+                    <label class="login-rem">
+                        <input type="checkbox">
+                        <b></b>
+                        <p>Запомнить меня</p>
+                    </label>
+    
+                    <a href="#" class="login-link"  data-toggle="modal" data-target="#exampleModal-4" data-dismiss="modal">Забыли пароль?</a>
+                </div>
+    
+                <button class="blue-btn"><span>Войти</span></button>
+                <a href="#" class="login-link login-link--last" data-toggle="modal" data-target="#exampleModal-3">Зарегистрироваться как новый пользователь</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="support-modal modal fade login-modal reg-modal" id="exampleModal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title mon text-center text-sm-left" id="exampleModalLabel">Регистрация
+                <p class="mon">Создание нового пользователя</p>
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="login-form">
+                  <label class="login-input login-input--email">
+                      <span class="login-input-icon">
+                          <img src="img/mail-icon.svg" alt="">
+                      </span>
+                      <input type="email" placeholder="E-mail">
+                  </label>
+    
+                  <div class="wrong">
+                      <img src="img/wrong.png" alt="">
+                      <p>Неверная попытка входа</p>
+                  </div>
+    
+                  <label class="login-input login-input--email">
+                    <span class="login-input-icon">
+                        <img src="img/man.svg" alt="">
+                    </span>
+                    <input type="text" placeholder="Имя">
+                </label>
+    
+                <div class="wrong">
+                    <img src="img/wrong.png" alt="">
+                    <p>Неверная попытка входа</p>
+                </div>
+    
+                <label class="login-input login-input--email">
+                  <span class="login-input-icon">
+                      <img src="img/man.svg" alt="">
+                  </span>
+                  <input type="text" placeholder="Фамилия">
+              </label>
+    
+              <div class="wrong">
+                  <img src="img/wrong.png" alt="">
+                  <p>Неверная попытка входа</p>
+              </div>
+    
+                  <label class="login-input login-input--pass">
+                    <span class="login-input-icon">
+                        <img src="img/lock.svg" alt="">
+                    </span>
+                    <input type="password" placeholder="Пароль">
+                </label>
+    
+                <div class="wrong">
+                    <img src="img/wrong.png" alt="">
+                    <p>Введен неверный логин или пароль</p>
+                </div>
+    
+                <p class="reg-desc mon">Пароль должен состоять из восьми или более символов латинского алфавита, содержать заглавные и строчные буквы, цифры. Для усложнения рекомендуем добавить символы и знаки препинания</p>
+    
+                <button class="blue-btn"><span>Зарегистрироваться</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="support-modal modal fade login-modal password-modal" id="exampleModal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title mon text-center text-sm-left" id="exampleModalLabel">Забыли пароль?
+                <p class="mon">Введите адрес электронной почты</p>
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="login-form">
+    
+                  <label class="login-input">
+                    <span class="login-input-icon">
+                        <img src="img/mail-icon.svg" alt="" height="20">
+                    </span>
+                    <input type="email" placeholder="">
+                </label>
+    
+                <div class="wrong">
+                    <img src="img/wrong.png" alt="">
+                    <p>Введен неверный адрес электронной почты</p>
+                </div>
+    
+                <button class="blue-btn"><span>Отправить</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="modal fade login-modal support-modal" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title mon" id="exampleModalLabel">Добавление обращения</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="login-form">
+                  <label class="modal-input">
+                      Заголовок
+                      <input type="text">
+                  </label>
+    
+                  <div class="wrong">
+                    <img src="img/wrong.png" alt="">
+                    <p>Добавьте заголвок обращения</p>
+                  </div>
+    
+                  <div class="wrong">
+                    <img src="img/wrong.png" alt="">
+                    <p>Заголовок должен быть не менее 10 и не более 100 символов</p>
+                  </div>
+    
+                  <label class="modal-input">
+                    Описание
+                    <textarea></textarea>
+                  </label>
+    
+                  <div class="wrong">
+                    <img src="img/wrong.png" alt="">
+                    <p>Добавьте описание обращения</p>
+                  </div>
+    
+                <button class="blue-btn"><span>Отправить</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="support-modal modal fade login-modal " id="exampleModal-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header align-items-center">
+              <h5 class="modal-title mon text-center text-sm-left" id="exampleModalLabel">Обращение №1</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h3>Заголовок</h3>
+              <p>Не получается войти в личный кабинет</p>
+              <h3>Описание</h3>
+              <p>Задача организации, в особенности же укрепление и развитие структуры в значительной степени обуславливает создание направлений прогрессивного развития. Идейные соображения высшего порядка, а также консультация с широким активом представляет собой интересный</p>
+              <h3>Дата создания</h3>
+              <p>15.11.2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

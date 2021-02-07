@@ -20,8 +20,10 @@ body {
   min-height: 100vh;
 
   main {
+    position: relative;
     flex-grow: 1;
     padding: 40px 0 90px;
+    overflow: hidden;
 
     @include mmMax {
       padding: 25px 0 90px;

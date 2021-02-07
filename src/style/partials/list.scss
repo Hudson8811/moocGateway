@@ -11,6 +11,10 @@
     padding: 19px;
     background-color: #fff;
     border-radius: 5px;
+
+    @include mmMax {
+      padding: 20px 11px;
+    }
   }
 
   &-icon {
@@ -21,6 +25,16 @@
     height: 46px;
     margin-right: 10px;
     flex-shrink: 0;
+
+    @include mmMax {
+      width: 34px;
+      height: 34px;
+
+      img {
+        display: block;
+        height: 24px;
+      }
+    }
   }
 
   &-title {
@@ -30,6 +44,16 @@
     line-height: 24px;
     font-weight: bold;
     color: #4d80b2;
+
+    @include mMax {
+      padding-right: 25px;
+    }
+
+    @include mmMax {
+      font-size: 16px;
+      line-height: 19px;
+      padding-right: 0;
+    }
   }
 
   &-persent {
@@ -39,6 +63,10 @@
     line-height: 24px;
     font-weight: bold;
     color: #4d80b2;
+
+    @include mMax {
+      display: none;
+    }
   }
 }
 

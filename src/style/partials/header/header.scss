@@ -1,14 +1,15 @@
 .header {
   box-sizing: border-box;
-  padding: 24px 0;
+  padding: 40px 0;
   background-color: #fff;
-  min-height: 112px;
+  height: 112px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
   @include mmMax {
-    min-height: 74px;
+    height: 74px;
+    padding: 25px 0;
   }
 
   &-logo {

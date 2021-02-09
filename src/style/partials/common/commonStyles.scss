@@ -24,6 +24,7 @@ body {
     flex-grow: 1;
     padding: 40px 0 90px;
     overflow: hidden;
+    min-height: 70vh;
 
     @include mmMax {
       padding: 25px 0 90px;
@@ -187,4 +188,15 @@ body {
 .disabled {
   pointer-events: none;
   opacity: 0.2;
+}
+
+.castom-orange-btn {
+  padding: 18px 0;
+
+  @include mmMax {
+    padding: 15px 0;
+  }
+  @include smallMax {
+    padding: 11px 0;
+  }
 }
